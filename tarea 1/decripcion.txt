@@ -1,0 +1,5 @@
+Tu primer ejercicio sera subir los 3 ejercicios anteriores, cada uno con un archivo de descripcion, y otro archivo donde este el codigo, todo junto en una carpeta con la nomenclatura
+Tarea #
+sustituyendo # por el numero secuencial que vaya
+
+y posterior subirlo todo a al repositorio remoto
