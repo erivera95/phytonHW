@@ -12,3 +12,5 @@ Dos = Peliculas[-2:]
 print(Dos)
 Invertido = Peliculas[::-1]
 print(Invertido)
+
+suma = 0
