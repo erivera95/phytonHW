@@ -17,4 +17,7 @@ def diagonal(matriz):
     diagonal = []
     for i in range(len(matriz)):
         diagonal.append(matriz[i][i])
-        return diagonal
+    return diagonal
+
+print("La suma de la matriz:", suma_matriz(matriz))
+print("La diagonal de la matriz es:", diagonal(matriz))
