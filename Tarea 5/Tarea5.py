@@ -25,3 +25,18 @@
 # - 15 es positivo pero no cumple ninguna de las reglas anteriores, así que permanece igual.
 # - -6 es negativo, así que se convierte en 6.
 # - 3 es positivo pero no cumple ninguna de las reglas anteriores, así que permanece igual.
+
+numeros = [-14, -8, -2, 0, 2, 6, 9, 12]
+mayor = max(numeros)
+lista = []
+for num in numeros:
+    if num > 0 and num % 2 == 0:
+        lista.append(num // 2)
+    elif num > 0 and num % 3 == 0 and num % 6 != 0:
+        lista.append(num - 3)
+    elif num < 0:
+        lista.append(abs(num))
+    elif num == 0:
+        lista.append(mayor)
+print("lista_transformada:")
+print(lista)

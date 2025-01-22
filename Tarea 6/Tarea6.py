@@ -20,3 +20,16 @@
 #
 # Lista resultante:
 # [10, "Valor inválido", 30, "Valor inválido", "Valor inválido", 50]
+
+valores = ["10", "23", "veinte", "15.6", "30", "cien"]
+lista = []
+for valor in valores:
+    try:
+        lista.append(int(valor))
+    except:
+        lista.append("Valor inválido")
+print("Lista original:")
+print(valores)
+
+print("\nLista resultante:")
+print(lista)

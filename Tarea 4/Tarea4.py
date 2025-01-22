@@ -25,3 +25,36 @@
 #   [1, 0, 1],
 #   [1, 0, 0]
 # ]
+
+matriz = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+def numero_primo(n):
+    if n <= 1:
+        return False
+    for i in range(2,n):
+        if n % i ==0:
+            return False
+    return True
+def matriz_primos(matriz):
+    matriz_final = []
+    for fila in matriz:
+        fila_final = []
+    for numero in fila:
+        if numero_primo(numero):
+            fila_final.append(1)
+        else:
+            fila_final.append(0)
+    matriz_final.append(fila_final)
+    return matriz_final
+
+print("Matriz original:")
+for row in matriz:
+    print(row)
+
+matriz_final = matriz_primos(matriz)    
+print("Matriz resultante:")
+for row in matriz_final:
+    print(row)

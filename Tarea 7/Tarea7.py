@@ -20,3 +20,22 @@
 # 
 # Lista resultante:
 # ['Positivo', 'Negativo', 'Decimal', 'Error', 'Error', 'Positivo', 'Decimal']
+
+valores = [10, 8, 4.2, 0, -2, "-13.3"]
+lista = []
+for valor in valores:
+    try:
+        if type(valor) == int:
+            if valor > 0:
+                lista.append("Positivo")
+            else:
+                lista.append("Negativo")
+        elif type(valor) == float:
+            lista.append("Decimal")
+    except:
+        lista.append("Error")
+print("Lista original:")
+print(valores)
+
+print("\nLista resultante:")
+print(lista)
