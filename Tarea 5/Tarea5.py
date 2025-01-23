@@ -40,3 +40,6 @@ for num in numeros:
         lista.append(mayor)
 print("lista_transformada:")
 print(lista)
+
+
+#NO ESTA PERMITIDO USAR BUCLES PARA REALIZAR LAS TRANSFORMACIONES

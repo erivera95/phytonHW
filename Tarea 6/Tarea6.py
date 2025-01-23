@@ -28,8 +28,12 @@ for valor in valores:
         lista.append(int(valor))
     except:
         lista.append("Valor inválido")
+
 print("Lista original:")
 print(valores)
 
 print("\nLista resultante:")
 print(lista)
+
+
+#Agregar un try mas para los numeros decimales y cada que uno exista, poner un mensaje de "Numero decimal"
